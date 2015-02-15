@@ -1,0 +1,136 @@
+<header class="masthead masthead-inline" role="banner">
+  <div class="x-topbar">
+    <div class="x-topbar-inner x-container-fluid max width" style="color:#e20016">
+        <div class="x-social-global" >
+          <a href="https://www.facebook.com/stemnow" class="facebook" title="Facebook" target="_blank">
+            <i class="fa fa-facebook-square"></i>
+          </a>
+          <a href="https://twitter.com/stemnowgroup" class="twitter" title="Twitter" target="_blank">
+          	<i class="fa fa-twitter"></i>
+          </a>
+          <span style="padding-left:50px;"></span>
+          <a href="" class="donation" target="_blank">
+            <span style="font-size:16px;">DONATE</span>
+          </a>
+        </div>    
+    </div>
+  </div>
+
+  <div class="navbar-wrap">
+    <div class="navb" style="border-bottom:1px solid #f2f2f2;">
+      <div class="nav-inner">
+        <div class="x-container-fluid max width">
+          
+          <a href="" class="x-brand img" title="Creating networking opportunities for young women." style="margin-top: 16px;">
+            <img src="/assets/logo2.png" alt="Creating networking opportunities for young women.">
+          </a>  
+        
+        
+        
+     
+    
+          <ul class="nav navbar-nav">
+             <li class="<%=is_active('home')%>"><%= link_to "Home", home_path%></li>
+             <li class="dropdown <%=is_active('news')%>  <%=is_active('events')%>">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                   News & Events 
+                   <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                   <li> <%= link_to "News", news_path%> </li>
+                   <li> <%= link_to "Events", events_path%></li>
+                </ul>
+             </li>
+              <li class="dropdown <%=is_active('documents')%>  <%=is_active('faq')%>">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                   Resources 
+                   <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                   <li>  <%= link_to "Documents", documents_path%></li>
+                   <li>  <%= link_to "FAQ", faq_path%></li>
+                </ul>
+             </li>
+             <li class="dropdown <%=is_active('officers')%>  <%=is_active('contact')%>">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                   Contact
+                   <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                   <li> <%= link_to "Meet The Team", officers_path%> </li>
+                   <li><%= link_to "Contact Us!", contact_path%></li>
+                </ul>
+             </li>
+              <li class="<%=is_active('photos')%>"><%= link_to "Photos", photos_path%></li>
+               <li class="<%=is_active('blogs')%>"><%= link_to "Blog", blogs_path%></li>
+              <li class=""><a href="https://docs.google.com/forms/d/1jF9PRN9wXXaLmPN8pQIHoN3mG0TqRi-FkWorVyEdswY/viewform">Join Us!</a></li>
+          </ul>
+
+        
+        
+        
+        
+        
+        
+        
+      <!--<nav class="x-nav-collapse collapse navbar-collapse" role="navigation">
+                     
+          <ul id="menu-main-nav" class="x-nav sf-menu">
+              <li class="menu-item  current-menu-item current_page_item">
+                
+                <%= link_to "Home", home_path%>
+              </li>
+              
+              <li class="menu-item menu-item-has-children dropdown">
+                <a class="dropdown-toggle" data-toggle="collapse" role="button" aria-expanded="false">News &#038; Events</a>
+                <ul class="sub-menu dropdown-menu" role="menu">
+                	<li  class="menu-item menu-item-type-post_type ">
+                	   <%= link_to "News", news_path%>
+                	</li>
+                	<li class="menu-item menu-item-type-post_type ">
+                	  <%= link_to "Events", events_path%>
+                	</li>
+                </ul>
+              </li>
+              
+              <li class="menu-item  menu-item-has-children">
+                <a>Resources</a>
+                <ul class="sub-menu">
+                	<li class="menu-item menu-item-type-post_type ">
+                	  <%= link_to "Documents", documents_path%>
+                	</li>
+                	<li class="menu-item menu-item-type-post_type ">
+                	  <%= link_to "FAQ", faq_path%>
+                	</li>
+                </ul>
+              </li>
+              <li class="menu-item menu-item-has-children ">
+                <a>Contact</a>
+                <ul class="sub-menu">
+                	<li class="menu-item menu-item-type-post_type">
+                	  <%= link_to "Officers", officers_path%>
+                	</li>
+                	<li class="menu-item menu-item-type-post_type">
+                	  <%= link_to "Contact Us!", contact_path%>
+                	</li>
+                </ul>
+              </li>
+              <li class="menu-item">
+                <%= link_to "Photos", photos_path%>
+              </li>
+              <li class="menu-item">
+                <%= link_to "Blog", blogs_path%>
+              </li>
+              <li class="menu-item">
+                <a href="https://docs.google.com/forms/d/1jF9PRN9wXXaLmPN8pQIHoN3mG0TqRi-FkWorVyEdswY/viewform">Join Us!</a>
+              </li>
+            </ul>
+          </nav> 
+          
+          -->
+          
+        </div>
+      </div> <!-- end .x-navbar-inner -->
+    </div> <!-- end .x-navbar -->
+  </div> <!-- end .x-navbar-wrap -->
+</header>

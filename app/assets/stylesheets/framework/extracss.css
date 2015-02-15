@@ -1,0 +1,18 @@
+.donation{
+	font-size: 12px;
+	padding: 5px 12px 8px 12px;
+	text-align: center;
+
+	background: #e20016;
+	border-radius: 5px;
+	color: white;
+	margin-bottom: 10px;
+	font-family: "Montserrat","Helvetica Neue",Helvetica,sans-serif;
+}
+.donation:hover{
+	color: #666;
+	background: white;
+	color:#e20016;
+	border: none;
+	margin-bottom: 10px;
+}
