@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   
   get 'faq' => 'static_pages#faq'
   
-  get 'officers' => 'static_pages#officers'
+  get 'team' => 'static_pages#officers'
 
   get 'contact' => 'static_pages#contact'
 
@@ -22,6 +22,8 @@ Rails.application.routes.draw do
   get 'blogs' => 'static_pages#blogs'
 
   get 'join' => 'static_pages#join'
+  
+  get 'donate' => 'static_pages#donate'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

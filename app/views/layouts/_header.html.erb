@@ -9,7 +9,7 @@
           	<i class="fa fa-twitter"></i>
           </a>
           <span style="padding-left:50px;"></span>
-          <a href="" class="donation" target="_blank">
+          <a href="<%= donate_path%>" class="donation">
             <span style="font-size:16px;">DONATE</span>
           </a>
         </div>    
@@ -57,7 +57,7 @@
                    <b class="caret"></b>
                 </a>
                 <ul class="dropdown-menu">
-                   <li> <%= link_to "Meet The Team", officers_path%> </li>
+                   <li> <%= link_to "Meet The Team", team_path%> </li>
                    <li><%= link_to "Contact Us!", contact_path%></li>
                 </ul>
              </li>
@@ -108,7 +108,7 @@
                 <a>Contact</a>
                 <ul class="sub-menu">
                 	<li class="menu-item menu-item-type-post_type">
-                	  <%= link_to "Officers", officers_path%>
+                	  <%= link_to "Officers", team_path%>
                 	</li>
                 	<li class="menu-item menu-item-type-post_type">
                 	  <%= link_to "Contact Us!", contact_path%>

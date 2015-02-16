@@ -31,4 +31,8 @@ class StaticPagesController < ApplicationController
 
   def join
   end
+  
+  def donate
+  end
+  
 end
