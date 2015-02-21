@@ -1,3 +1,4 @@
+
 <header class="masthead masthead-inline" role="banner">
   <div class="x-topbar">
     <div class="x-topbar-inner x-container-fluid max width" style="color:#e20016">
@@ -16,7 +17,7 @@
     </div>
   </div>
 
-  <div class="navbar-wrap">
+  <div class="navbar-wrap " role="navigation">
     <div class="navb" style="border-bottom:1px solid #f2f2f2;">
       <div class="nav-inner">
         <div class="x-container-fluid max width">
@@ -29,7 +30,7 @@
         
      
     
-          <ul class="nav navbar-nav">
+          <ul class="nav navbar-nav ">
              <li class="<%=is_active('home')%>"><%= link_to "Home", home_path%></li>
              <li class="dropdown <%=is_active('news')%>  <%=is_active('events')%>">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -133,4 +134,21 @@
       </div> <!-- end .x-navbar-inner -->
     </div> <!-- end .x-navbar -->
   </div> <!-- end .x-navbar-wrap -->
+
+<script>
+  $(function () {
+    $("#nav").tinyNav();
+  });
+  
+  $("#nav").tinyNav({
+  active: 'selected', // String: Set the "active" class
+  header: 'Navigation', // String: Specify text for "header" and show header instead of the active item
+  indent: '- ', // String: Specify text for indenting sub-items
+  label: '' // String: Sets the <label> text for the <select> (if not set, no label will be added)
+});
+
+
+  
+</script>
 </header>
+
