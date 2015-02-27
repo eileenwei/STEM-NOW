@@ -21,19 +21,12 @@ body{
   .x-recent-posts a:hover .x-recent-posts-img,.tp-leftarrow.default:hover,.tp-rightarrow.default:hover{background-color:#d80f0f;}
   
   
-  /* styles for desktop */
-.tinynav { display: none }
+
 
 /* styles for mobile */
-@media screen and (max-width: 600px) {
-    .tinynav { display: block }
-    #nav { display: none }
-}
 
-@media screen and (max-width: 600px) {
-    .js .tinynav { display: block }
-    .js #nav { display: none }
-}
+
+
 
   .nav{
     float: right;
@@ -396,5 +389,9 @@ body{
 .slide-container img {
     display: block;
     width: 100%;
+}
+
+.icon-bar{
+  background: #777;
 }
 

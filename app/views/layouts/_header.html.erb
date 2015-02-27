@@ -16,21 +16,28 @@
         </div>    
     </div>
   </div>
-
+  <nav class="navbar">
+  <div class="container-fluid">
   <div class="navbar-wrap " role="navigation">
     <div class="navb" style="border-bottom:1px solid #f2f2f2;">
       <div class="nav-inner">
         <div class="x-container-fluid max width">
           
+           
+          <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" style="border: 2px solid #e20016; margin-top: 24px;">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar" style="background: #e20016;"></span>
+            <span class="icon-bar" style="background: #e20016;"></span>
+            <span class="icon-bar" style="background: #e20016;"></span>
+          </button>
           <a href="" class="x-brand img" title="Creating networking opportunities for young women." style="margin-top: 16px;">
             <img src="https://dl.dropboxusercontent.com/s/3w3vpfz0gn88c4f/logo2.png" alt="Creating networking opportunities for young women.">
-          </a>  
-        
-        
-        
-     
-    
-          <ul class="nav navbar-nav ">
+          </a>
+        </div>
+         <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav " id="nav">
              <li class="<%=is_active('home')%>"><%= link_to "Home", home_path%></li>
              <li class="dropdown <%=is_active('news')%>  <%=is_active('events')%>">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
@@ -67,7 +74,7 @@
               <li class=""><a href="https://docs.google.com/forms/d/1jF9PRN9wXXaLmPN8pQIHoN3mG0TqRi-FkWorVyEdswY/viewform">Join Us!</a></li>
           </ul>
 
-        
+        </div>
         
         
         
@@ -134,18 +141,13 @@
       </div> <!-- end .x-navbar-inner -->
     </div> <!-- end .x-navbar -->
   </div> <!-- end .x-navbar-wrap -->
+  </div>
+  </nav>
 
 <script>
   $(function () {
     $("#nav").tinyNav();
   });
-  
-  $("#nav").tinyNav({
-  active: 'selected', // String: Set the "active" class
-  header: 'Navigation', // String: Specify text for "header" and show header instead of the active item
-  indent: '- ', // String: Specify text for indenting sub-items
-  label: '' // String: Sets the <label> text for the <select> (if not set, no label will be added)
-});
 
 
   
